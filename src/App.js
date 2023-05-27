@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div>
       <h1>Example 1 Products</h1>
-      <div key={jsonData}>
+      <div>
         <pre>{jsonData}</pre>
       </div>
       <h1>Example 2 Products</h1>
