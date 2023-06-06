@@ -26,16 +26,10 @@ const App = () => {
         <pre>{jsonData}</pre>
       </div>
       <h1>Example 2 Products</h1>
-      {filteredProducts.map(record => {
-        let totalWeight = 0;
-
-        record.products.forEach(Weightproduct => {
-          totalWeight += Weightproduct.weight;
-        });
-
+      {total.map(record => {
         return (
-          <div className='box' key={record.id}>
-            Name {record.name} TotalWeight {totalWeight}
+          <div className='box' key={record.name}>
+            Name {record.name} TotalWeight {record.weight}
           </div>
         );
       })}
